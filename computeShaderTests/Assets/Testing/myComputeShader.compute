@@ -1,0 +1,23 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMainMult
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+//RWTexture2D<float4> Result;
+
+struct VecMatPair
+{
+	float3 pos;
+	float4x4 mat;
+};
+RWStructuredBuffer<VecMatPair> dataBuffer;
+
+[numthreads(16,1,1)]
+void CSMainMult (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+    dataBuffer[id.x].pos = 0;//(dataBuffer[id.x].pos) + float3(10.0f,20.0f, 30.0f);//mul(dataBuffer[id.x].mat, float4(dataBuffer[id.x].pos,1.0));
+//    Result[id.xy] = float4(id.x & id.y, (id.x & 15)/15.0, (id.y & 15)/15.0, 0.0);
+}
+
+

@@ -1,0 +1,21 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel RUSSELCS
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+Texture2D<float3> inputTexture;
+SamplerState samplerinputTexture;
+
+[numthreads(8,8,1)]
+void RUSSELCS (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+
+    uint2 dim;
+    Result.GetDimensions(dim.x,dim.y);
+
+    float2 uv = (float2(id.x,id.y)+0.5)/dim;
+    float3 col = inputTexture.SampleLevel(samplerinputTexture, uv, 0);
+    Result[id.xy] = float4(col,1);//float4(id.x & id.y, (id.x & 15)/15.0, (id.y & 15)/15.0, 0.0);
+}
