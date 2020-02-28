@@ -78,7 +78,7 @@ public class CS_BAXTER : MonoBehaviour
   	public Vector4 BRUSH_P1;
 	float DIR = 0.0f;
 
-	int w,h, W2,H2;
+	public int w,h, W2,H2;
     int NumThreadsX, NumThreadsY, NumThreadsZ;
     float DiffusionConstant_a;
 	float DiffusionConstant_c;
@@ -138,7 +138,6 @@ public class CS_BAXTER : MonoBehaviour
      	channel1 			= new Vector4(0,0,0,0);
      	channel2 			= new Vector4(0,0,0,0);
      	InitializeShader();   
-     	
     }
 
     RenderTexture CreateRenderTexture(int w, int h, int type=0){

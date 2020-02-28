@@ -333,9 +333,10 @@ GameObject:
   - component: {fileID: 385022130}
   - component: {fileID: 385022133}
   - component: {fileID: 385022134}
+  - component: {fileID: 385022129}
   - component: {fileID: 385022128}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -375,12 +376,16 @@ MonoBehaviour:
   BRUSH_VOLUME: {fileID: 0}
   HEIGHT_MAP: {fileID: 0}
   NORMAL_MAP: {fileID: 0}
-  initialBrush: {fileID: 2800000, guid: 7c6f123f3ab224dfd80b2364e44a54e6, type: 3}
+  initialBrush: {fileID: 0}
   camera: {fileID: 277416637}
   mousePosition: {x: 0, y: 0, z: 0}
   mousePositionPrev: {x: 0, y: 0, z: 0}
   mousePositionPICKUP: {x: 0, y: 0, z: 0}
   BRUSH_P1: {x: 0, y: 0, z: 0, w: 0}
+  w: 0
+  h: 0
+  W2: 0
+  H2: 0
   THETA: 0
   VISCOSITY: 0.47
   DIFFUSION: 0
@@ -390,6 +395,28 @@ MonoBehaviour:
   BRUSH_PAINT_DEPOSIT_RATE: 0.99
   BRUSH_WIDTH: 20
   PAINT_DRY_RATE: 0
+--- !u!114 &385022129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385022127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7592651bee63ae44cb7ce9bb78697e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_brushScript: {fileID: 385022128}
+  m_pressureMat: {fileID: 2100000, guid: 3f7600268ae1a384aa0635c04867f8f6, type: 2}
+  m_pressureShader: {fileID: 4800000, guid: 79c1498db92faa64880c1434005e7fb5, type: 3}
+  m_brushes:
+  - {fileID: 11400000, guid: c189f4d998cd2e04f8a7049e84bd645b, type: 2}
+  m_activeBrush: 0
+  m_activeTexture: 0
+  m_pressure: 2
+  m_angle: 90
+  m_brushToUseTexture: {fileID: 0}
 --- !u!23 &385022130
 MeshRenderer:
   m_ObjectHideFlags: 0
