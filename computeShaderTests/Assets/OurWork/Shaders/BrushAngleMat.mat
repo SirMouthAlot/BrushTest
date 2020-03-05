@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BrushPressureMat
-  m_Shader: {fileID: 4800000, guid: 79c1498db92faa64880c1434005e7fb5, type: 3}
+  m_Name: BrushAngleMat
+  m_Shader: {fileID: 4800000, guid: e16a9f8020a295149ae265f113b5dff1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AngleTex1:
+        m_Texture: {fileID: 2800000, guid: bbe700039e62bcf479578e0d7b726ada, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: -0.11, y: 0.02}
+    - _AngleTex2:
+        m_Texture: {fileID: 2800000, guid: 07f2a3354f514c446a0f1939499c4862, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -56,9 +64,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BrightnessAmount: 2.415
+    - _Angle1: 45
+    - _Angle2: 90
     - _BumpScale: 1
-    - _ContrastAmount: 6
+    - _CurrentAngle: 53.4
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0

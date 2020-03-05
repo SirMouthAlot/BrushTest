@@ -3,7 +3,7 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _BrightnessAmount ("Brightness Amount", Range(0.5, 2.0)) = 1.0
+        _BrightnessAmount ("Brightness Amount", Range(0.5, 3.0)) = 1.0
         _ContrastAmount ("Contrast Amount", Range(0.5, 6.0)) = 1.0
     }
     SubShader
