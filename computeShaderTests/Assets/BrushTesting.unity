@@ -412,14 +412,17 @@ MonoBehaviour:
   m_angleMat: {fileID: 2100000, guid: bf36854913191d541919a39efcf42308, type: 2}
   m_brushes:
   - {fileID: 11400000, guid: c189f4d998cd2e04f8a7049e84bd645b, type: 2}
+  - {fileID: 11400000, guid: 2ccc6ccb7e0e4d04aa45effc25efc0cf, type: 2}
+  - {fileID: 11400000, guid: 8bc7b4d850307ce48a2177335cf26841, type: 2}
+  - {fileID: 11400000, guid: 417f6f0fb73115d479cce070dad342ce, type: 2}
   angleSpeed: 4
   pressureSpeed: 0.3
   m_brush1: {fileID: 0}
   m_brush2: {fileID: 0}
-  m_activeBrush: 0
+  m_activeBrush: 1
   m_activeTexture: 0
   m_pressure: 0.805
-  m_angle: 53.4
+  m_angle: 0
   m_brushToUseTexture: {fileID: 0}
   pressureVal: {fileID: 1997082386}
   angleVal: {fileID: 2109613179}
